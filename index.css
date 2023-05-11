@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800;1,900&display=swap");
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smoke-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Off-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+.card {
+  background-color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  width: 800px;
+  overflow: hidden;
+  border-radius: 25px 25px 200px 25px;
+}
+.inputCard {
+  display: flex;
+  position: relative;
+  top: -20px;
+  left: 80px;
+  gap: 25px;
+  height: 100px;
+  width: 100%;
+}
+.Box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.Input {
+  height: 80px;
+  width: 150px;
+  border-radius: 5px;
+  border: 1px solid var(--Light-grey);
+  padding: 15px;
+  font-size: 1.9rem;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+.Input:focus {
+  border-color: var(--Purple);
+  caret-color: var(--Purple);
+  cursor: pointer;
+}
+
+.topTexts {
+  color: var(--Smoke-grey);
+  font-weight: 900;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+}
+.submitDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 15px;
+}
+.line {
+  height: 3px;
+  width: 71%;
+  background-color: var(--Off-white);
+}
+.btn {
+  background-image: url("/assets/images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--Purple);
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+}
+.btn:active {
+  scale: 0.95;
+}
+.btn:hover {
+  background-color: black;
+  cursor: pointer;
+}
+.outputAreas {
+  position: relative;
+  top: -10px;
+  left: -120px;
+  line-height: 90px;
+}
+.r-Bottom {
+  font-size: 5.5rem;
+  font-weight: 900;
+}
+.result {
+  color: var(--Purple);
+}
+.warningMessage {
+  font-size: 0.75rem;
+  color: var(--Light-red);
+  font-style: italic;
+  font-weight: 400;
+}
